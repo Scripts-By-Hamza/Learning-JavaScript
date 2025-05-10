@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sets character encoding -->
+    <title>Simple To-Do List</title>
+    <!-- Page title in browser tab -->
+
+    <style>
+      body {
+        font-family: Arial, sans-serif; /* Sets font for the page */
+        padding: 2rem; /* Adds space around content */
+        background-color: #f4f4f4; /* Light gray background */
+      }
+      h2 {
+        color: #333; /* Dark gray text for header */
+      }
+      input {
+        padding: 0.5rem; /* Space inside input */
+        font-size: 1rem; /* Font size for input text */
+      }
+      button {
+        padding: 0.5rem 1rem; /* Space inside button */
+        font-size: 1rem; /* Button text size */
+        margin-left: 0.5rem; /* Space between input and button */
+        cursor: pointer; /* Cursor becomes pointer on hover */
+      }
+      ul {
+        list-style: none; /* Removes bullet points from list */
+        padding: 0;
+      }
+      li {
+        background: #fff; /* White background for tasks */
+        margin: 0.5rem 0; /* Space between tasks */
+        padding: 0.5rem; /* Space inside each task */
+        border-radius: 5px; /* Rounded corners */
+        display: flex; /* Aligns text and button horizontally */
+        justify-content: space-between; /* Spaces task text and button apart */
+        align-items: center; /* Vertically center-align items */
+      }
+      .remove-btn {
+        background-color: red; /* Red delete button */
+        color: white; /* White text */
+        border: none; /* No border */
+        padding: 0.3rem 0.6rem; /* Space inside button */
+        border-radius: 4px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>📝 To-Do List</h2>
+    <!-- Heading -->
+
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <!-- Input field for new tasks -->
+
+    <button onclick="addTask()">Add</button>
+    <!-- Button to add task when clicked -->
+
+    <ul id="taskList"></ul>
+    <!-- Empty unordered list where tasks will be added -->
+
+    <script src="toDoListProject.js"></script>
+  </body>
+</html>
